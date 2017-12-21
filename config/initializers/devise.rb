@@ -111,7 +111,7 @@ Devise.setup do |config|
   # config.pepper = '5f88c4a46bfa76f3412f0d40d81d137f7ab915d89c92ca73a9e1b5c661d075fa20469947928e84d126a075a62f811257affb2a24d29a5de6628892664ca54eba'
 
   # Send a notification to the original email when the user's email is changed.
-  # config.send_email_changed_notification = false
+  config.send_email_changed_notification = false
 
   # Send a notification email when the user's password is changed.
   # config.send_password_change_notification = false
@@ -187,7 +187,7 @@ Devise.setup do |config|
 
   # Number of authentication tries before locking an account if lock_strategy
   # is failed attempts.
-  config.maximum_attempts = 3
+  config.maximum_attempts = 20
 
   # Time interval to unlock the account if :time is enabled as unlock_strategy.
   config.unlock_in = 1.hour
